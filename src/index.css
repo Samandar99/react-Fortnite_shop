@@ -7,7 +7,6 @@
 
 body {
   background: #e7f6ff;
-
 }
 
 a {
@@ -292,6 +291,7 @@ li {
   align-items: center;
   min-height: 120px;
   padding: 0 20px;
+  justify-content: space-between;
 }
 
 .drawer__item-info {
@@ -389,14 +389,10 @@ li {
   margin-top: 40px;
 }
 
-
-
 .paginatsions {
-
   /* background-color: red; */
   max-width: 350px;
   margin: 30px auto;
-
 }
 
 .paginatsions__btn {
@@ -415,8 +411,6 @@ li {
   color: #fff;
 }
 
-
-
 .pag li {
   background-color: #fff;
   cursor: pointer;
@@ -431,11 +425,9 @@ li {
   margin-right: 10px;
 }
 
-
 .pag .selected {
   background-color: #fe5f1e;
   color: #fff;
-  
 }
 
 .pag a {
@@ -445,4 +437,19 @@ li {
   align-items: center;
   height: 40px;
   flex-grow: 1;
+}
+
+.card__b {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.drawer__footer{
+  margin-top: 30px;
 }

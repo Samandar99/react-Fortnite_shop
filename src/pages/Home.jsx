@@ -19,7 +19,7 @@ function Home({ panelOpen, setPanleOpen }) {
 
     setTimeout(() => {
       setLoading(false);
-    }, 2000)
+    }, 2000);
   }, [dispatch]);
 
   return (

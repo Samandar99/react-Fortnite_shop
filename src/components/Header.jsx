@@ -3,11 +3,16 @@ import logo from "../assets/images/logo.svg";
 import cart from "../assets/images/cart.svg";
 import heart from "../assets/images/heart.svg";
 import user from "../assets/images/user.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header({ setPanleOpen }) {
+
+  
+  const navigate = useNavigate();
+
   function open() {
     setPanleOpen(true);
+    console.log("salom");
   }
 
   return (

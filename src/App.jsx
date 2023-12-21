@@ -11,10 +11,6 @@ import { setItems, fetchItems } from "./redux/slices/productsSlice";
 
 function App() {
   const [panelOpen, setPanleOpen] = useState(false);
-  
-  
-
-  
 
   return (
     <div className="wrapper">
@@ -24,7 +20,12 @@ function App() {
           path="/"
           element={<Home panelOpen={panelOpen} setPanleOpen={setPanleOpen} />}
         />
-        <Route path="/Forever" element={<Forever />} />
+        <Route
+          path="/Forever"
+          element={
+            <Forever panelOpen={panelOpen} setPanleOpen={setPanleOpen} />
+          }
+        />
       </Routes>
     </div>
   );

@@ -7,8 +7,6 @@ function Search() {
   const dispatch = useDispatch();
   const searchTerm = useSelector((state) => state.products.searchTerm);
 
-  console.log(searchTerm);
-
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
     dispatch(setSearchs(inputValue));
